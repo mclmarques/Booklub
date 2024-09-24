@@ -12,7 +12,7 @@ android {
     defaultConfig {
         applicationId = "com.booklub"
         minSdk = 29
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -70,6 +70,14 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     //Firebase
     implementation(platform("com.google.firebase:firebase-bom:33.3.0"))
-    implementation("com.google.firebase:firebase-analytics")
+    implementation(libs.firebase.analytics)
+    implementation (libs.firebase.auth.ktx)
+    implementation (libs.firebase.firestore.ktx)
+    implementation (libs.firebase.database)
+    implementation (libs.firebase.storage)
+    implementation (libs.firebase.functions)
+
+    implementation (libs.androidx.lifecycle.viewmodel.compose)
+
 
 }
