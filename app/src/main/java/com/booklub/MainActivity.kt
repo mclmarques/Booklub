@@ -12,7 +12,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.booklub.ui.LoginScreen
+import com.booklub.ui.SignUpScreen
 import com.booklub.ui.theme.BooklubTheme
+import com.booklub.ui.theme.ForumScreen
+import com.booklub.ui.theme.MainScreenViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +23,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             BooklubTheme {
-                LoginScreen(onLoginSuccess = {/*TODO*/})
+                SignUpScreen {
+                    ForumScreen();
+                }
             }
         }
     }

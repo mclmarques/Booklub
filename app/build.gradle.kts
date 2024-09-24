@@ -79,5 +79,11 @@ dependencies {
 
     implementation (libs.androidx.lifecycle.viewmodel.compose)
 
+    //Coil
+    implementation("io.coil-kt:coil-compose:2.7.0")
+
+    //Icons
+    implementation("androidx.compose.material:material-icons-extended:1.6.0")
+
 
 }
