@@ -1,5 +1,4 @@
-package com.booklub.ui.theme
-import androidx.lifecycle.ViewModel
+package com.booklub.ui
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 

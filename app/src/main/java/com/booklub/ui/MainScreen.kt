@@ -1,4 +1,4 @@
-package com.booklub.ui.theme
+package com.booklub.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
